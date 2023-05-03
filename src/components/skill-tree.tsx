@@ -154,7 +154,7 @@ const SkillTreeNode = ({
             {skill.name}
           </button>
         )}
-        <div style={{ opacity: !skill.learnt ? 0.5 : 1 }}>
+        <div style={{ opacity: disabled ? 0.5 : 1 }}>
           {skill.effect.attribute}: {value}
         </div>
       </div>

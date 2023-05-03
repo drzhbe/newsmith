@@ -80,7 +80,7 @@ export const Workbench = ({
         coolDown={finalSecondsToMakeSword}
         isCoolingDown={inProgress}
       >
-        Make sword
+        <h1>🔥 Make a sword</h1>
       </ButtonWithCooldown>
     </div>
   );
