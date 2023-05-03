@@ -1,0 +1,35 @@
+@keyframes button-timer-animation {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.button-with-cooldown {
+  border-radius: 8px;
+  position: relative;
+}
+
+.button-with-cooldown .cooldown {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #213547;
+  opacity: 0.25;
+  transform-origin: left;
+  transform: scaleX(0);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.button-with-cooldown .cooldown.progress {
+  animation: button-timer-animation linear;
+}
+
+.button-with-cooldown--label {
+  position: inherit;
+}
